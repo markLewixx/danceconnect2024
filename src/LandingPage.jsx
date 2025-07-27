@@ -56,6 +56,7 @@ const LandingPage = () => {
           <div className="relative z-100 flex  w-full h-full">
             <div className="text-center max-w-4xl mx-auto px-4">
               {/* Replace this with your hero copy */}
+              <a href="https://nairobichapelrongai.or.ke/" target="_blank" rel="noopener noreferrer">
               <div className="w-full flex justify-center">
                 <img
                   src="\dance_connect_assets\SVG\NCOR-logo.svg"
@@ -63,6 +64,8 @@ const LandingPage = () => {
                   className="w-16"
                 />
               </div>
+              </a>
+              
               <div className="">
                 {" "}
                 <div className="flex justify-center translate-y-8">
