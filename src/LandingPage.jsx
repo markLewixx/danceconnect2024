@@ -1,4 +1,4 @@
-import SplashCursor from "./splashCursor";
+import SplashCursor from "./SplashCursor.jsx";
 
 const LandingPage = () => {
   return (
