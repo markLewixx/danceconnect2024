@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1129.57 1582.73">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#White_Black);
+      }
+
+      .cls-3 {
+        mix-blend-mode: screen;
+        opacity: .44;
+      }
+    </style>
+    <linearGradient id="White_Black" data-name="White, Black" x1="-6868.4" y1="-3652.99" x2="-6354.86" y2="-3256.28" gradientTransform="translate(-1807.15 7351.44) rotate(83)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Text_Effect" data-name="Text Effect">
+        <g id="Background">
+          <g class="cls-3">
+            <rect class="cls-2" width="1129.57" height="1582.73"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
