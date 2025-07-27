@@ -54,10 +54,8 @@ const LandingPage = () => {
 
           {/* Hero content container */}
           <div className="relative z-100 flex  w-full h-full justify-center items-center">
-            <div className="text-center max-w-4xl mx-auto px-4 flex flex-col gap-4">
-              {/* Replace this with your hero copy */}
               <a href="https://nairobichapelrongai.or.ke/" target="_blank" rel="noopener noreferrer">
-              <div className="w-full flex justify-center">
+              <div className="w-full flex justify-center fixed top-2">
                 <img
                   src="\dance_connect_assets\SVG\NCOR-logo.svg"
                   alt=""
@@ -65,6 +63,9 @@ const LandingPage = () => {
                 />
               </div>
               </a>
+            <div className="text-center max-w-4xl mx-auto px-4 flex flex-col gap-4">
+              {/* Replace this with your hero copy */}
+            
               
               <div className="">
                 {" "}
