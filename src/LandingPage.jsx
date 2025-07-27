@@ -53,8 +53,8 @@ const LandingPage = () => {
           </div>
 
           {/* Hero content container */}
-          <div className="relative z-100 flex  w-full h-full">
-            <div className="text-center max-w-4xl mx-auto px-4">
+          <div className="relative z-100 flex  w-full h-full justify-center items-center">
+            <div className="text-center max-w-4xl mx-auto px-4 flex flex-col gap-4">
               {/* Replace this with your hero copy */}
               <a href="https://nairobichapelrongai.or.ke/" target="_blank" rel="noopener noreferrer">
               <div className="w-full flex justify-center">
@@ -80,7 +80,7 @@ const LandingPage = () => {
                   <img
                     src="/dance_connect_assets/SVG/Dancers-Prayer-Day.png"
                     alt="Dancers Prayer Day"
-                    className="w-full max-w-[400px] h-auto"
+                    className="w-full max-w-[200px] h-auto sm:max-w-[250px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[600px]"
                   />
                 </div>
                 {/* Theme */}
