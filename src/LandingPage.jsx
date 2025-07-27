@@ -118,7 +118,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section>
+     <section className="w-full h-dvh overflow-hidden">
         <div className="w-full h-screen overflow-hidden relative">
           {/* Rotated background color layer */}
           <div className="absolute inset-0 w-full h-full scale-110  origin-center rotate-180 scale-x-[-1] ">
