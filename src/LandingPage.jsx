@@ -80,7 +80,7 @@ const LandingPage = () => {
                   <img
                     src="/dance_connect_assets/SVG/Dancers-Prayer-Day.png"
                     alt="Dancers Prayer Day"
-                    className="w-full max-w-[200px] h-auto sm:max-w-[250px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[600px]"
+                    className="w-full max-w-[400px] h-auto"
                   />
                 </div>
                 {/* Theme */}
