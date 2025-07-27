@@ -69,7 +69,7 @@ const LandingPage = () => {
                   <img
                     src="/dance_connect_assets/SVG/dance-connect.png"
                     alt="Dance Connect"
-                    className="w-full max-w-[450px] h-auto "
+                    className="w-full max-w-[250px] h-auto "
                   />
                 </div>
                 {/* Dancers Prayer Day */}
@@ -77,7 +77,7 @@ const LandingPage = () => {
                   <img
                     src="/dance_connect_assets/SVG/Dancers-Prayer-Day.png"
                     alt="Dancers Prayer Day"
-                    className="w-full max-w-[500px] h-auto"
+                    className="w-full max-w-[400px] h-auto"
                   />
                 </div>
                 {/* Theme */}
@@ -87,7 +87,7 @@ const LandingPage = () => {
                   </h3>
                 </div>
               </div>
-              <div className="flex flex-row flex-nowrap gap-4 items-center px-4 overflow-x-auto w-fit h-fit">
+              <div className="flex flex-row flex-nowrap gap-4 items-center  px-4 overflow-x-auto w-fit h-fit">
                 {/* Register Dance Crew Button */}
                 {/* Register Dance Crew Button */}
                 <a
@@ -101,7 +101,7 @@ const LandingPage = () => {
                     <img
                       src="\dance_connect_assets\SVG\SVG\Stalabs.svg"
                       alt="Stalabs Logo"
-                      className="ml-2 w-6 h-6 md:w-8 md:h-8"
+                      className="ml-2 w-6 h-4 "
                     />
                   </button>
                 </a>
