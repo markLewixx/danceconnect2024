@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'LuckiestGuy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/dance_connect_assets/Fonts/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+.font-luckiest {
+  font-family: 'LuckiestGuy', cursive;
+}
