@@ -11,7 +11,7 @@ const LandingPage = () => {
             {/* Rotated background color layer */}
             <div className="absolute inset-0 w-full h-full scale-110  origin-center">
               <img
-                src="public/dance_connect_assets/SVG/Background color.svg"
+                src="/dance_connect_assets/SVG/Background color.svg"
                 alt=""
                 className="w-full h-full object-cover object-center"
               />
@@ -20,7 +20,7 @@ const LandingPage = () => {
             {/* Radial grain overlay */}
             <div className="absolute inset-0 w-full h-full z-20 scale-110 opacity-40 lg:hidden">
               <img
-                src="public/dance_connect_assets/SVG/Radial Grain.svg"
+                src="/dance_connect_assets/SVG/Radial Grain.svg"
                 alt=""
                 className="w-full h-full object-cover object-center"
               />
@@ -29,7 +29,7 @@ const LandingPage = () => {
             {/* Light shadow overlay */}
             <div className="absolute inset-0 w-full h-full z-10  opacity-10">
               <img
-                src="public/dance_connect_assets/SVG/Light Shadow.svg"
+                src="/dance_connect_assets/SVG/Light Shadow.svg"
                 alt=""
                 className="w-full h-full object-cover object-center"
               />
@@ -58,7 +58,7 @@ const LandingPage = () => {
               {/* Replace this with your hero copy */}
               <div className="w-full flex justify-center">
                 <img
-                  src="public\dance_connect_assets\SVG\NCOR-logo.svg"
+                  src="\dance_connect_assets\SVG\NCOR-logo.svg"
                   alt=""
                   className="w-16"
                 />
@@ -99,7 +99,7 @@ const LandingPage = () => {
                   <button className="inline-flex items-center hover:bg-[#6a365e] bg-[#71115B] text-white px-6 md:px-8 py-4 rounded-full text-xs md:text-lg font-luckiest  transition-colors whitespace-nowrap w-fit hover:cursor-pointer">
                     REGISTER DANCE CREW NOW
                     <img
-                      src="public\dance_connect_assets\SVG\SVG\Stalabs.svg"
+                      src="\dance_connect_assets\SVG\SVG\Stalabs.svg"
                       alt="Stalabs Logo"
                       className="ml-2 w-6 h-6 md:w-8 md:h-8"
                     />
@@ -120,14 +120,14 @@ const LandingPage = () => {
           {/* Rotated background color layer */}
           <div className="absolute inset-0 w-full h-full scale-110  origin-center rotate-180 scale-x-[-1] ">
             <img
-              src="public/dance_connect_assets/SVG/Background color.svg"
+              src="/dance_connect_assets/SVG/Background color.svg"
               alt=""
               className="w-full h-full object-cover object-center"
             />
           </div>
           <div className="absolute inset-0 w-full h-full z-20 scale-110 opacity-40 lg:hidden">
             <img
-              src="public/dance_connect_assets/SVG/Radial Grain.svg"
+              src="/dance_connect_assets/SVG/Radial Grain.svg"
               alt=""
               className="w-full h-full object-cover object-center"
             />
