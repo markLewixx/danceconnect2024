@@ -4,8 +4,8 @@ const LandingPage = () => {
   return (
     <>
       <SplashCursor />
-      <section className="w-full h-screen overflow-hidden">
-        <div className="relative w-full h-dvh">
+      <section className="w-full h-dvh overflow-hidden">
+        <div className="relative w-full h-full">
           {/* Background layers */}
           <div className="absolute inset-0 w-full h-full">
             {/* Rotated background color layer */}
