@@ -30,7 +30,7 @@ const CountdownTimer = ({ targetDate,className }) => {
   }, [targetDate]);
 
   if (!timeLeft) {
-    return <div>🎉 Time's up!</div>;
+    return <div className={`${className}`}>WE ARE LIVE🎉</div>;
   }
 
   return (
