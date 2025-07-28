@@ -1,3 +1,4 @@
+import CountdownTimer from "./CountdownTimer.jsx";
 import SplashCursor from "./SplashCursor.jsx";
 
 const LandingPage = () => {
@@ -111,15 +112,19 @@ const LandingPage = () => {
                 </a>
 
                 {/* More Information Button */}
-                <button className="inline-flex items-center hover:cursor-pointer hover:bg-[#f2b482] bg-[#FA7100] border-2 border-[#71115B] text-[#71115B] px-6 md:px-8 py-4 rounded-full text-xs md:text-lg font-luckiest tracking-wide  transition-colors whitespace-nowrap w-fit">
+                <a href="#details">
+                <button onCli className="inline-flex items-center hover:cursor-pointer hover:bg-[#f2b482] bg-[#FA7100] border-2 border-[#71115B] text-[#71115B] px-6 md:px-8 py-4 rounded-full text-xs md:text-lg font-luckiest tracking-wide  transition-colors whitespace-nowrap w-fit">
                   MORE INFORMATION
                 </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-     <section className="w-full h-dvh overflow-hidden">
+
+      {/*SECTION 2 */}
+     <section id="details" className="w-full h-dvh overflow-hidden">
         <div className="w-full h-screen overflow-hidden relative">
           {/* Rotated background color layer */}
           <div className="absolute inset-0 w-full h-full scale-110  origin-center rotate-180 scale-x-[-1] ">
@@ -134,6 +139,12 @@ const LandingPage = () => {
               src="/dance_connect_assets/SVG/Radial Grain.svg"
               alt=""
               className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div className="relative z-100 flex  w-full h-full justify-center items-center">
+            <CountdownTimer 
+            className="font-luckiest text-8xl text-[#71115B] "
+            targetDate="2025-08-10T14:00:00"
             />
           </div>
         </div>
