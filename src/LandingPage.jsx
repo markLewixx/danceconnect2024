@@ -126,8 +126,8 @@ const LandingPage = () => {
       </section>
 
       {/*SECTION 2 */}
-      <section id="details" className="w-full h-dvh overflow-hidden">
-        <div className="w-full h-screen overflow-hidden relative">
+      <section id="details" className="w-full h-fit overflow-hidden">
+        <div className="w-full h-fit overflow-hidden relative">
           {/* Rotated background color layer */}
           <div className="absolute inset-0 w-full h-full scale-110  origin-center rotate-180 scale-x-[-1] ">
             <img
@@ -145,46 +145,74 @@ const LandingPage = () => {
             />
           </div>
 
-          {/*Main content*/}
-          <div className="relative z-100 flex  w-full h-full  flex-col">
-            <div className="flex justify-evenly font-luckiest text-2xl text-[#FA7100] w-screen mt-8 bg-[#71115B]">
-              <h3>AUGUST 10 2025</h3>
-              <h3>2PM to 5PM</h3>
-            </div>
-            <div className="flex flex-col items-center font-luckiest text-2xl text-[#FA7100] w-screen mt-8">
-              <h4>Theme</h4>
-              <h3 className="text-white -rotate-4">“Art @ his feet”</h3>
-            </div>
-            <div className="flex flex-col items-center font-luckiest text-2xl text-[#71115B] w-screen mt-8">
-              <h4>VENUE:</h4>
-              <h3 className="text-white -rotate-4">NAIROBI CHAPEL ONGATA RONGAI</h3>
-            </div>
-            <div className="flex flex-col justify-center items-center my-16">
-              <h4 className="text-[#FA7100] font-luckiest bg-[#71115B] border-2  p-4 r ">Time Remaining To Event</h4>
-              <CountdownTimer
-              className="font-luckiest text-5xl text-[#71115B]"
-              targetDate="2025-08-10T14:00:00"
-            />
-            </div>
-            <div className="w-full flex flex-col justify-center items-center gap-2">
-              <h5 className="text-white  font-luckiest">
-                CLICK Icons to follow us on instagram
-              </h5>
-              <div className="w-full flex justify-center ">
-              <div className="bg-[#FA7100] flex justify-evenly align-center py-2 w-3/4 border-2 border-[#71115B] ">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                <img src="\dance_connect_assets\SVG\Stalabs Logo.svg" alt="stalabs logo" className="w-10" /></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                <img src="\dance_connect_assets\SVG\NextGen Logo.svg" alt="NextGen logo" className="w-10"/></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                <img src="\dance_connect_assets\SVG\3D logo.svg" alt="3d logo" className="w-10 -translate-y-1"/>
-                </a>
-              </div>
-              </div>
-              <a href=""><button className="w-full bg-[#FA7100] font-luckiest text-white p-4 border-2 border-[#71115B]">GET MAP DIRECTIONS</button></a>
-            </div>
-            
-          </div>
+         <div className="relative z-100 w-screen h-screen bg-transparent text-white font-luckiest flex flex-col items-center justify-between p-4">
+
+  {/* Header: Date & Time */}
+  <div className="w-full bg-[#71115B] text-[#FA7100] flex flex-col sm:flex-row justify-evenly items-center py-4 text-xl sm:text-2xl rounded-xl">
+    <h3>AUGUST 10 2025</h3>
+    <h3>2PM to 5PM</h3>
+  </div>
+
+  {/* Theme */}
+  <div className="text-center mt-4">
+    <h4 className="text-[#FA7100] text-xl">Theme</h4>
+    <h3 className="text-white text-3xl -rotate-2 mt-1">“Art @ his feet”</h3>
+  </div>
+
+  {/* Venue */}
+  <div className="text-center mt-4">
+    <h4 className="text-[#71115B] text-xl">VENUE:</h4>
+    <h3 className="text-white text-2xl -rotate-2 mt-1">NAIROBI CHAPEL ONGATA RONGAI</h3>
+  </div>
+
+  {/* Video Player */}
+  <div className="w-full max-w-3xl mt-6">
+    <div className="aspect-video w-full border-4 border-[#FA7100] rounded-xl overflow-hidden">
+      <video
+        className="w-full h-full object-cover"
+        controls
+        poster="/dance_connect_assets/Images/video-poster.jpg"
+      >
+        <source src="/dance_connect_assets/Videos/promo-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  {/* Countdown */}
+  <div className="text-center mt-6">
+    <h4 className="text-[#FA7100] bg-[#71115B] border-2 border-white px-6 py-2 rounded-xl text-xl mb-2 inline-block">
+      Time Remaining To Event
+    </h4>
+    <CountdownTimer
+      className="text-4xl text-[#71115B] mt-2"
+      targetDate="2025-08-10T14:00:00"
+    />
+  </div>
+
+  {/* Socials & Button */}
+  <div className="w-full flex flex-col items-center mt-6 gap-3">
+    <h5 className="text-white text-lg text-center">CLICK Icons to follow us on Instagram</h5>
+    <div className="bg-[#FA7100] flex justify-evenly items-center py-3 w-3/4 max-w-lg border-2 border-[#71115B] rounded-xl">
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <img src="/dance_connect_assets/SVG/Stalabs Logo.svg" alt="stalabs logo" className="w-10" />
+      </a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <img src="/dance_connect_assets/SVG/NextGen Logo.svg" alt="NextGen logo" className="w-10" />
+      </a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <img src="/dance_connect_assets/SVG/3D logo.svg" alt="3d logo" className="w-10 -translate-y-1" />
+      </a>
+    </div>
+    <a href="#">
+      <button className="bg-[#FA7100] text-white text-lg px-6 py-3 border-2 border-[#71115B] rounded-xl mt-2 w-3/4 max-w-lg">
+        GET MAP DIRECTIONS
+      </button>
+    </a>
+  </div>
+
+</div>
+
         </div>
       </section>
     </>
