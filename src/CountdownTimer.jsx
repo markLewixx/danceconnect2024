@@ -34,9 +34,26 @@ const CountdownTimer = ({ targetDate,className }) => {
   }
 
   return (
- <div className={`${className}`}>
-  {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
-</div>
+  <div className={className}>
+      <div className="grid grid-cols-4 gap-1 sm:gap-2 text-center">
+        <div className="bg-white bg-opacity-20 rounded-lg p-1 sm:p-2">
+          <div className="text-sm sm:text-lg lg:text-2xl font-bold">{timeLeft.days}</div>
+          <div className="text-xs">DAYS</div>
+        </div>
+        <div className="bg-white bg-opacity-20 rounded-lg p-1 sm:p-2">
+          <div className="text-sm sm:text-lg lg:text-2xl font-bold">{timeLeft.hours}</div>
+          <div className="text-xs">HRS</div>
+        </div>
+        <div className="bg-white bg-opacity-20 rounded-lg p-1 sm:p-2">
+          <div className="text-sm sm:text-lg lg:text-2xl font-bold">{timeLeft.minutes}</div>
+          <div className="text-xs">MIN</div>
+        </div>
+        <div className="bg-white bg-opacity-20 rounded-lg p-1 sm:p-2">
+          <div className="text-sm sm:text-lg lg:text-2xl font-bold">{timeLeft.seconds}</div>
+          <div className="text-xs">SEC</div>
+        </div>
+      </div>
+    </div>
   );
 };
 

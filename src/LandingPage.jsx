@@ -1,6 +1,6 @@
 import CountdownTimer from "./CountdownTimer.jsx";
 import SplashCursor from "./SplashCursor.jsx";
-import { GlobeIcon } from "lucide-react";
+import { Globe, Clock, MapPin, Calendar, Users, Video, ArrowBigDown } from "lucide-react";
 
 const LandingPage = () => {
   return (
@@ -128,7 +128,7 @@ const LandingPage = () => {
 
       {/*SECTION 2 */}
       <section id="details" className="w-full h-fit overflow-hidden">
-        <div className="w-full h-[1300px] overflow-hidden relative">
+        <div className="w-full h-[900px] overflow-hidden relative">
           {/* Rotated background color layer */}
           <div className="absolute inset-0 w-full h-full scale-110  origin-center rotate-180 scale-x-[-1] ">
             <img
@@ -138,14 +138,15 @@ const LandingPage = () => {
             />
           </div>
 
-          <div className="absolute inset-0 w-full h-full z-20 scale-110 opacity-40 lg:hidden">
+          <div className="absolute inset-0 w-full h-full  scale-110 opacity-40 lg:hidden">
             <img
               src="/dance_connect_assets/SVG/Radial Grain.svg"
               alt=""
               className="w-full h-full object-cover object-center"
             />
           </div>
-          <div className="absolute top-4 right-4 z-40 rotate-24 w-32 md:w-40 lg:w-48 animate-bounce [animation-duration:2s] ">
+          {/*Right Foot*/}
+          <div className="absolute top-4 right-4  rotate-24 w-32 md:w-40 lg:w-48 animate-bounce [animation-duration:2s] ">
             <img
               src="/dance_connect_assets/SVG/At his Feet.svg"
               alt=""
@@ -153,7 +154,7 @@ const LandingPage = () => {
             />
           </div>
           {/*Foot at left*/}
-          <div className="absolute bottom-40 left-16 z-40 -rotate-24 scale-x-[-1]   w-24 md:w-32 lg:w-40 animate-bounce [animation-duration:2s] ">
+          <div className="absolute bottom-40 left-16  -rotate-24 scale-x-[-1]   w-24 md:w-32 lg:w-40 animate-bounce [animation-duration:2s] ">
             <img
               src="/dance_connect_assets/SVG/At his Feet.svg"
               alt=""
@@ -161,86 +162,130 @@ const LandingPage = () => {
             />
           </div>
 
-          <div className="relative z-100 w-screen h-screen bg-transparent text-white font-luckiest flex flex-col items-center justify-between ">
-            {/* Header: Date & Time */}
-            <div className="w-full bg-[#71115B] text-[#FA7100] flex flex-row  justify-evenly items-center py-4 text-xl sm:text-2xl ">
-              <h3>AUGUST 10 2025</h3>
-              <h3>2PM to 5PM</h3>
-            </div>
+          <div className="min-h-screen  bg-gradient-to-br from-purple-900 via-purple-800 to-orange-600 p-2 sm:p-4">
+            <div className="max-w-7xl mx-auto">
+              {/* Bento Box Grid - Always maintains bento structure */}
+              <div className="grid grid-cols-6 sm:grid-cols-8  lg:grid-cols-12 gap-2 sm:gap-3  lg:gap-4 h-screen max-h-[900px] min-h-[600px]">
+                {/* Date & Time Header - Full width on all screens */}
+                <div className="relative font-luckiest col-span-6 sm:col-span-8 lg:col-span-12 bg-[#71115B] rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-[#FA7100] border-2 border-orange-400">
+                  <div className="flex flex-row items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" />
+                      <h2 className="text-sm sm:text-lg lg:text-2xl xl:text-3xl font-bold">
+                        AUGUST 10 2025
+                      </h2>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8" />
+                      <h2 className="text-sm sm:text-lg lg:text-2xl xl:text-3xl font-bold">
+                        2PM to 5PM
+                      </h2>
+                    </div>
+                  </div>
+                </div>
 
-            {/* Theme */}
-            <div className="text-center mt-4">
-              <h4 className="text-[#FA7100] text-xl">Theme</h4>
-              <h3 className="text-white text-3xl -rotate-2 mt-1">
-                “Art @ his feet”
-              </h3>
-            </div>
+                {/* Event Title - Spans 4 cols mobile, 5 cols tablet, 6 cols desktop */}
+                <div className="relative  col-span-4 sm:col-span-5 lg:col-span-6 bg-gradient-to-r from-purple-700 to-orange-500 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-white flex items-center justify-between">
+                  <div>
+                    <h2 className="text-lg sm:text-xl lg:text-3xl xl:text-4xl font-bold mb-1 lg:mb-2">
+                      DANCE CONNECT
+                    </h2>
+                    <p className="text-xs sm:text-sm lg:text-base xl:text-lg text-purple-200">
+                      Join us for an amazing dance experience!
+                    </p>
+                  </div>
+                  <div className="text-2xl sm:text-3xl lg:text-6xl xl:text-7xl opacity-20">
+                    🕺
+                  </div>
+                </div>
 
-            {/* Venue */}
-            <div className="text-center mt-4">
-              <h4 className="text-[#71115B] text-xl">VENUE:</h4>
-              <h3 className="text-white text-2xl -rotate-2 mt-1">
-                NAIROBI CHAPEL ONGATA RONGAI
-              </h3>
-            </div>
+                {/* Theme Card */}
+                <div className="col-span-2 sm:col-span-3 lg:col-span-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-purple-400 relative overflow-hidden flex flex-col justify-center gap-4 ">
+                  <div className="absolute -top-5 -right-5 w-8 h-8 sm:w-12 sm:h-12 lg:w-20 lg:h-20 bg-white opacity-10 rounded-full"></div>
+                  <h4 className="text-purple-200 text-xs sm:text-sm lg:text-lg xl:text-xl mb-1 lg:mb-2">
+                    Theme
+                  </h4>
+                  <h2 className="text-md m-aut sm:text-base lg:text-2xl xl:text-3xl font-bold transform -rotate-2 leading-tight font-luckiest">
+                    "Art @ his feet"
+                  </h2>
+                </div>
 
-            {/* Video Player */}
-            <div className="w-full max-w-xl flex justify-center mt-6 p-9">
-              <div className="aspect-[9/16]  h-[30rem] border-4 border-[#FA7100] rounded-xl overflow-hidden">
-                <video className="w-full h-full object-fit" controls>
-                  <source
-                    src="\dance_connect_assets\danceConnectVideo.mp4"
-                    type="video/mp4"
+                {/* Venue Card */}
+                <div className="flex flex-col justify-center gap-4 col-span-3 sm:col-span-4 lg:col-span-3 bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-orange-400 relative">
+                  <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4">
+                    <MapPin className="w-4 h-4 sm:w-6 sm:h-6 lg:w-8 lg:h-8 text-orange-400" />
+                  </div>
+                  <h4 className="text-orange-300 text-xs sm:text-sm lg:text-lg xl:text-xl mb-1 lg:mb-2">
+                    VENUE:
+                  </h4>
+                  <h3 className="text-2xl sm:text-sm lg:text-xl xl:text-2xl font-bold transform -rotate-1 leading-tight font-luckiest ">
+                    NAIROBI CHAPEL
+                    <br />
+                    ONGATA RONGAI
+                  </h3>
+                </div>
+
+                {/* Video Player - Large center piece */}
+                <div className="relative col-span-3 sm:col-span-4 lg:col-span-6 row-span-2 bg-gradient-to-br from-purple-800 to-purple-900 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 border-2 border-orange-400 flex flex-col items-center justify-center">
+                  <div className="flex items-center gap-2 mb-2 sm:mb-3 lg:mb-4">
+                    <Video className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-orange-400" />
+                    <h4 className="text-orange-400 font-bold text-xs sm:text-sm lg:text-lg xl:text-xl">
+                      Event Preview
+                    </h4>
+                  </div>
+                  <div className="aspect-[9/16] sm:aspect-video lg:aspect-[9/16] h-full max-h-[200px] sm:max-h-[150px] lg:max-h-[400px] w-full max-w-[150px] sm:max-w-none lg:max-w-[300px] border-2 sm:border-3 lg:border-4 border-orange-400 rounded-xl lg:rounded-2xl overflow-hidden bg-gray-800">
+                    <div className="w-full h-full flex items-center justify-center text-white">
+                      <div className="text-center p-2">
+                        <Video className="w-8 h-8 sm:w-10 sm:h-10 lg:w-16 lg:h-16 mx-auto mb-2 lg:mb-4 text-orange-400" />
+                        <p className="text-xs sm:text-sm">Video Preview</p>
+                        <p className="text-xs text-gray-400 mt-1 lg:mt-2 hidden sm:block">
+                          dance_connect_assets/danceConnectVideo.mp4
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Countdown Timer */}
+                <div className="relative flex flex-col justify-center gap-4  col-span-3 sm:col-span-4 lg:col-span-3 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-purple-400">
+                  <div className="flex items-center gap-1 sm:gap-2 mb-2 sm:mb-3 lg:mb-4">
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-purple-700" />
+                    <h4 className="text-purple-700 font-bold text-xs sm:text-sm lg:text-lg xl:text-xl">
+                      Time Remaining
+                    </h4>
+                  </div>
+                  <CountdownTimer
+                    className="text-purple-700 font-luckiest text-2xl"
+                    targetDate="2025-08-10T14:00:00"
                   />
-                  Your browser does not support the video tag.
-                </video>
+                </div>
+
+                {/* Social Media Links */}
+                <div className="relative col-span-4 sm:col-span-4 lg:col-span-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-purple-400">
+                  <h5 className="text-purple-200 text-xs sm:text-sm lg:text-base mb-2 sm:mb-3 lg:mb-4 text-center leading-tight">
+                    For more info click 
+                  </h5>
+                  <div className="flex justify-center gap-2 sm:gap-3 lg:gap-4">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
+                      <Users className="w-3 h-3 sm:w-4 sm:h-4 lg:w-6 lg:h-6" />
+                    </div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
+                      <Users className="w-3 h-3 sm:w-4 sm:h-4 lg:w-6 lg:h-6" />
+                    </div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
+                      <Users className="w-3 h-3 sm:w-4 sm:h-4 lg:w-6 lg:h-6" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Map Directions Button */}
+                <div className="relative col-span-2 sm:col-span-8 lg:col-span-6 bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 border-2 border-orange-400 flex items-center justify-center">
+                  <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 lg:py-3 lg:px-6 rounded-xl lg:rounded-2xl border-2 border-purple-700 flex items-center gap-2 transition-all transform hover:scale-105 text-xs sm:text-sm lg:text-base">
+                    GET DIRECTION
+                    <Globe className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5" />
+                  </button>
+                </div>
               </div>
-            </div>
-
-            {/* Countdown */}
-            <div className="text-center mt-6">
-              <h4 className="text-[#FA7100] bg-[#71115B] border-2 border-white px-6 py-2 rounded-xl text-xl mb-2 inline-block">
-                Time Remaining To Event
-              </h4>
-              <CountdownTimer
-                className="text-4xl text-[#71115B] mt-2"
-                targetDate="2025-08-10T14:00:00"
-              />
-            </div>
-
-            {/* Socials & Button */}
-            <div className="w-full flex flex-col items-center mt-6 gap-3">
-              <h5 className="text-white text-lg text-center">
-                CLICK Icons to follow us on Instagram
-              </h5>
-              <div className="bg-[#FA7100] flex justify-evenly items-center py-3 w-3/4 max-w-lg border-2 border-[#71115B] rounded-xl">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/dance_connect_assets/SVG/Stalabs Logo.svg"
-                    alt="stalabs logo"
-                    className="w-10"
-                  />
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/dance_connect_assets/SVG/NextGen Logo.svg"
-                    alt="NextGen logo"
-                    className="w-10"
-                  />
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="/dance_connect_assets/SVG/3D logo.svg"
-                    alt="3d logo"
-                    className="w-10 -translate-y-1"
-                  />
-                </a>
-              </div>
-              <a href="#">
-                <button className="bg-[#FA7100] text-white text-lg px-6 py-3 border-2 border-[#71115B] rounded-xl mt-2 max-w-lg w-fit whitespace-nowrap flex items-center gap-2">
-                  GET MAP DIRECTIONS <GlobeIcon className="text-[#71115B]" />
-                </button>
-              </a>
             </div>
           </div>
         </div>
