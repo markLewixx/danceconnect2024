@@ -1,6 +1,6 @@
 import CountdownTimer from "./CountdownTimer.jsx";
 import SplashCursor from "./SplashCursor.jsx";
-
+import { GlobeIcon } from "lucide-react";
 
 const LandingPage = () => {
   return (
@@ -238,7 +238,7 @@ const LandingPage = () => {
               </div>
               <a href="#">
                 <button className="bg-[#FA7100] text-white text-lg px-6 py-3 border-2 border-[#71115B] rounded-xl mt-2 max-w-lg w-fit whitespace-nowrap flex items-center gap-2">
-                  
+                  GET MAP DIRECTIONS <GlobeIcon className="text-[#71115B]" />
                 </button>
               </a>
             </div>
