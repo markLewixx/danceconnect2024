@@ -301,7 +301,7 @@ const LandingPage = () => {
                       src="\dance_connect_assets\Danceconnect.mp4"
                       preload="auto"
                       type="video/mp4"
-                      className="h-fit"
+                      className="w-full h-full object-cover"
                       playsInline
                       poster="\dance_connect_assets\SVG\video-poster.png"
                       onError={() => console.error("Video failed to load")}
