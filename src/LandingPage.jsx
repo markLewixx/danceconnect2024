@@ -103,7 +103,7 @@ const togglePlay = () => {
               {/* Replace this with your hero copy */}
 
               <div>
-                <div className="flex justify-center translate-y-8">
+                <div className="flex justify-center translate-y-8 animate-slide-in-right">
                   <img
                     src="/dance_connect_assets/SVG/dance-connect.png"
                     alt="Dance Connect"
@@ -111,7 +111,7 @@ const togglePlay = () => {
                   />
                 </div>
                 {/* Dancers Prayer Day */}
-                <div className="flex justify-center px-4 mt-4">
+                <div className="flex justify-center px-4 mt-4 animate-slide-in-left ">
                   <img
                     src="/dance_connect_assets/SVG/Dancers-Prayer-Day.png"
                     alt="Dancers Prayer Day"
@@ -120,12 +120,12 @@ const togglePlay = () => {
                 </div>
                 {/* Theme */}
                 <div className="">
-                  <h3 className="text-3xl md:text-5xl font-bold -rotate-8 -translate-y-8 text-white font-luckiest tracking-wide">
+                  <h3 className="text-3xl md:text-5xl font-bold -rotate-8 -translate-y-8 text-white font-luckiest tracking-wide animate-slide-in-right">
                     "Art @ his feet"
                   </h3>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row  w-full flex-nowrap gap-4 items-center   justify-center overflow-x-auto  h-fit">
+              <div className="flex flex-col sm:flex-row  w-full flex-nowrap gap-4 items-center   justify-center overflow-x-auto  h-fit animate-slide-in-left">
                 {/* Register Dance Crew Button */}
                 {/* Register Dance Crew Button */}
                 <a
