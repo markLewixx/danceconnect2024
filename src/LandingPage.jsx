@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import CountdownTimer from "./CountdownTimer.jsx";
-import SplashCursor from "./SplashCursor.jsx";
 import {
   Globe,
   Clock,
@@ -32,7 +31,6 @@ const LandingPage = () => {
   };
   return (
     <>
-      <SplashCursor />
       <section className="w-full h-dvh overflow-hidden">
         <div className="relative w-full h-full">
           {/* Background layers */}
