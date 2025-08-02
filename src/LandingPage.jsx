@@ -298,7 +298,7 @@ const LandingPage = () => {
                   >
                     <video
                       ref={videoRef}
-                      src="/dance_connect_assets/danceConnectVideo.mp4"
+                      src="/dance_connect_assets/SVG/Danceconnectvideo.mp4"
                       preload="auto"
                       type="video/mp4"
                       className="h-fit"
