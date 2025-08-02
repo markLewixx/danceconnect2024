@@ -303,6 +303,7 @@ const LandingPage = () => {
                       type="video/mp4"
                       className="h-fit"
                       playsInline
+                      poster="\dance_connect_assets\SVG\SVG\Dance Connect.jpg"
                       onError={() => console.error("Video failed to load")}
                       onLoadedData={() => console.log("Video loaded")}
                     />
