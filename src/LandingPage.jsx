@@ -298,7 +298,7 @@ const togglePlay = () => {
                   <div onClick={togglePlay} className="aspect-[9/16] sm:aspect-video lg:aspect-[9/16] h-full max-h-[200px] sm:max-h-[150px] lg:max-h-[400px] w-full max-w-[150px] sm:max-w-none lg:max-w-[300px] border-2 sm:border-3 lg:border-4 border-orange-400 rounded-xl lg:rounded-2xl overflow-hidden bg-gray-800">
                     <video
                     ref={videoRef}
-                      src="\dance_connect_assets\danceConnectVideo.mp4"
+                      src="/dance_connect_assets/danceConnectVideo.mp4"
                       type="video/mp4"
                       className="h-fit"
                       playsInline
