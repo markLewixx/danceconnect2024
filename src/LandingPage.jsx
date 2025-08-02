@@ -11,28 +11,25 @@ import {
   ArrowBigDown,
 } from "lucide-react";
 
-
-
-
 const LandingPage = () => {
   const videoRef = useRef(null);
-const [isPlaying, setIsPlaying] = useState(false);
-const [showButton, setShowButton] = useState(true);
-const togglePlay = () => {
-  const video = videoRef.current;
-  if (!video) return;
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showButton, setShowButton] = useState(true);
+  const togglePlay = () => {
+    const video = videoRef.current;
+    if (!video) return;
 
-  if (video.paused) {
-    video.play();
-    setIsPlaying(true);
-    // Hide the button after 2 seconds
-    setTimeout(() => setShowButton(false), 2000);
-  } else {
-    video.pause();
-    setIsPlaying(false);
-    setShowButton(true); // Show button again on pause
-  }
-};
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+      // Hide the button after 2 seconds
+      setTimeout(() => setShowButton(false), 2000);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+      setShowButton(true); // Show button again on pause
+    }
+  };
   return (
     <>
       <SplashCursor />
@@ -220,7 +217,7 @@ const togglePlay = () => {
                   <div className="flex justify-center w-full space-x-4 sm:space-x-6 lg:space-x-8">
                     {/* Logo 1 */}
                     <a
-                      href="#"
+                      href="https://www.instagram.com/generation_3d/?hl=en"
                       className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
                     >
                       <img
@@ -232,7 +229,7 @@ const togglePlay = () => {
 
                     {/* Logo 2 */}
                     <a
-                      href="#"
+                      href="https://www.instagram.com/nextgenchurch_ke/?hl=en"
                       className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
                     >
                       <img
@@ -244,7 +241,7 @@ const togglePlay = () => {
 
                     {/* Logo 3 */}
                     <a
-                      href="#"
+                      href="https://www.instagram.com/stalab_studios/?hl=en"
                       className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
                     >
                       <img
@@ -295,20 +292,24 @@ const togglePlay = () => {
                       A Welcome For You
                     </h4>
                   </div>
-                  <div onClick={togglePlay} className="aspect-[9/16] sm:aspect-video lg:aspect-[9/16] h-full max-h-[200px] sm:max-h-[150px] lg:max-h-[400px] w-full max-w-[150px] sm:max-w-none lg:max-w-[300px] border-2 sm:border-3 lg:border-4 border-orange-400 rounded-xl lg:rounded-2xl overflow-hidden bg-gray-800">
+                  <div
+                    onClick={togglePlay}
+                    className="aspect-[9/16] sm:aspect-video lg:aspect-[9/16] h-full max-h-[200px] sm:max-h-[150px] lg:max-h-[400px] w-full max-w-[150px] sm:max-w-none lg:max-w-[300px] border-2 sm:border-3 lg:border-4 border-orange-400 rounded-xl lg:rounded-2xl overflow-hidden bg-gray-800"
+                  >
                     <video
-                    ref={videoRef}
+                      ref={videoRef}
                       src="/dance_connect_assets/danceConnectVideo.mp4"
                       type="video/mp4"
                       className="h-fit"
                       playsInline
+                      onError={() => console.error("Video failed to load")}
+                      onLoadedData={() => console.log("Video loaded")}
                     />
                     {showButton && (
                       <button
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
                      bg-black/60 text-white text-3xl rounded-full p-4 transition-opacity duration-300"
                         onClick={(e) => {
-                        
                           e.stopPropagation(); // Prevent triggering video toggle twice
                           togglePlay();
                         }}
@@ -333,8 +334,8 @@ const togglePlay = () => {
                   />
                 </div>
 
-                {/* Social Media Links */}
-                <div className="relative col-span-4 sm:col-span-4 lg:col-span-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-purple-400">
+                {/* Number for info */}
+                <div className="relative col-span-4 sm:col-span-4 lg:col-span-3 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-purple-400 flex flex-col justify-center">
                   <h5 className="text-purple-200 font-semibold text-xs sm:text-sm lg:text-base mb-2 sm:mb-3 lg:mb-4 text-center leading-tight">
                     For more info call
                   </h5>
