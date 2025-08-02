@@ -285,7 +285,7 @@ const LandingPage = () => {
                 </div>
 
                 {/* Video Player - Large center piece */}
-                <div className="relative col-span-3 sm:col-span-4 lg:col-span-6 row-span-2 bg-gradient-to-br from-purple-800 to-purple-900 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 border-2 border-orange-400 flex flex-col items-center justify-center">
+                <div className="relative col-span-3 sm:col-span-4 lg:col-span-6 row-span-2 bg-gradient-to-br from-purple-800 to-purple-900 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 border-2 border-orange-400 flex flex-col items-center justify-center z-1000">
                   <div className="flex items-center gap-2 mb-2 sm:mb-3 lg:mb-4">
                     <Video className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-orange-400" />
                     <h4 className="text-orange-400 font-bold text-xs sm:text-sm lg:text-lg xl:text-xl">
