@@ -98,7 +98,7 @@ const LandingPage = () => {
               {/* Replace this with your hero copy */}
 
               <div>
-                <div className="flex justify-center translate-y-8 animate-slide-in-right">
+                <div className="flex justify-center translate-y-4 animate-slide-in-right">
                   <img
                     src="/dance_connect_assets/SVG/dance-connect.png"
                     alt="Dance Connect"
@@ -108,7 +108,7 @@ const LandingPage = () => {
                 {/* Dancers Prayer Day */}
                 <div className="flex justify-center px-4 mt-4 animate-slide-in-left ">
                   <img
-                    src="/dance_connect_assets/SVG/Dancers-Prayer-Day.png"
+                    src="\dance_connect_assets\SVG\SVG\Dancers.svg"
                     alt="Dancers Prayer Day"
                     className="w-full max-w-[350px] h-auto"
                   />
