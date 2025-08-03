@@ -224,7 +224,16 @@ const LandingPage = () => {
                         className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-md shadow-md"
                       />
                     </a>
-
+ <a
+                      href="https://www.instagram.com/stalab_studios/?hl=en"
+                      className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
+                    >
+                      <img
+                        src="\dance_connect_assets\SVG\Stalabs Logo.svg"
+                        alt="Stalabs logo"
+                        className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-md shadow-md"
+                      />
+                    </a>
                     {/* Logo 2 */}
                     <a
                       href="https://www.instagram.com/nextgenchurch_ke/?hl=en"
@@ -238,16 +247,7 @@ const LandingPage = () => {
                     </a>
 
                     {/* Logo 3 */}
-                    <a
-                      href="https://www.instagram.com/stalab_studios/?hl=en"
-                      className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
-                    >
-                      <img
-                        src="\dance_connect_assets\SVG\Stalabs Logo.svg"
-                        alt="Stalabs logo"
-                        className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-md shadow-md"
-                      />
-                    </a>
+                   
                   </div>
 
                   {/* Background text (optional) */}
