@@ -212,11 +212,11 @@ const LandingPage = () => {
                 {/* Event Title - Spans 4 cols mobile, 5 cols tablet, 6 cols desktop */}
                 <div className="relative col-span-4 sm:col-span-5 lg:col-span-6 bg-gradient-to-r from-purple-700 to-orange-500 rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 text-white border-2 border-white flex items-center justify-between">
                   {/* Logo container */}
-                  <div className="flex justify-center w-full space-x-4 sm:space-x-6 lg:space-x-8">
+                  <div className="flex justify-center w-full space-x-4 sm:space-x-6 lg:space-x-8 bg-white rounded-2xl p-3">
                     {/* Logo 1 */}
                     <a
                       href="https://www.instagram.com/generation_3d/?hl=en"
-                      className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none"
+                      className="transform transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none "
                     >
                       <img
                         src="\dance_connect_assets\SVG\3D logo.svg"
