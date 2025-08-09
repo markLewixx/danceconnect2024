@@ -124,16 +124,16 @@ const LandingPage = () => {
                 {/* Register Dance Crew Button */}
                 {/* Register Dance Crew Button */}
                 <a
-                  href="https://forms.gle/oTJ9AzWCbu4hHpC46
+                  href="https://www.google.com/maps/dir//JP5P%2BGXF+Nairobi+Chapel+Ongata+Rongai,+Nairobi/@-1.393552,36.721356,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f059ba1f56fb7:0xb8663ec8bf363711!2m2!1d36.7374352!2d-1.3911982?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D
 "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button className="inline-flex items-center  hover:bg-[#6a365e] bg-[#71115B] text-white px-6 md:px-8 py-4 rounded-full text-xs md:text-lg font-luckiest  transition-colors whitespace-nowrap  hover:cursor-pointer">
-                    REGISTER DANCE CREW NOW
+                    GET DIRECTIONS
                     <img
                       src="\dance_connect_assets\SVG\SVG\Stalabs.svg"
-                      alt="Stalabs Logo"
+                      alt="Dance Logo"
                       className="ml-2 w-6 h-4 "
                     />
                   </button>
